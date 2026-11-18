@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Kaylaa 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hearts"></div>
+<nav id="dots"></nav>
+<button id="music" title="Putar / jeda musik" aria-label="Putar / jeda musik">🎵</button>
+<main id="app">
+
+<!-- 1. Amplop -->
+<section>
+  <div class="env" id="env">
+    <div class="letter">
+      <div class="kit">🎀🎈</div>
+      <h2 class="script">Happy Birthday,</h2>
+      <h3 class="cur">My Sweetheart</h3>
+      <p>Aku sudah menyiapkan sesuatu yang spesial untuk kamu... tekan tombol di bawah untuk memulai!</p>
+      <button class="btn" data-next>Mulai Kejutan →</button>
+    </div>
+    <div class="body"></div>
+    <div class="flap"></div>
+    <div class="seal">🎀</div>
+  </div>
+  <p class="hint" id="envHint">Ketuk pita lilin untuk membuka undangan... ✨</p>
+</section>
+
+<!-- 2. Diary -->
+<section>
+  <h2 class="t">My Secret Diary</h2>
+  <p class="sub">Ketuk buku untuk memutar kuncinya &amp; membacanya</p>
+  <div class="book" id="book"><b>My Secret Diary</b><span class="lock">🔒</span><small>TAP TO UNLOCK &amp; OPEN</small></div>
+  <div class="page hand" id="page">
+    <div class="pink">Dearest <span data-nama></span>,</div>
+    <p>Setiap momen bersamamu terasa seperti mimpi yang paling indah. Kamu adalah segalanya bagiku — tawa, kehangatan, dan semua warna di hariku.</p>
+    <p>Di hari spesialmu ini, aku ingin kamu tahu betapa berartinya kehadiranmu. Kamu adalah orang favoritku di seluruh dunia.</p>
+    <div class="pink r">Love always,<br>Your Person</div>
+  </div>
+  <button class="btn hid" id="dBtn" data-next>View your photos →</button>
+</section>
+
+<!-- 3. Our Memories -->
+<section>
+  <h2 class="t">Your photos</h2>
+  <p class="sub">Tarik &amp; lempar tumpukan foto untuk melihat! 📷</p>
+  <div class="stack" id="stack"></div>
+  <button class="btn" data-next>Time for Cake! →</button>
+</section>
+
+<!-- 4. Kue -->
+<section>
+  <h2 class="t">Time for Cake!</h2>
+  <p class="sub" id="cakeSub">Tarik pisau pemotong dari kiri ke kanan untuk membagi kuenya! 🍰</p>
+  <div class="cake">
+    <svg viewBox="0 0 140 130" width="150">
+      <rect x="62" y="12" width="5" height="22" fill="#fff59d"/><rect x="76" y="12" width="5" height="22" fill="#b3e5fc"/>
+      <ellipse cx="64.5" cy="9" rx="3" ry="5" fill="#ffb300"/><ellipse cx="78.5" cy="9" rx="3" ry="5" fill="#ffb300"/>
+      <rect x="44" y="34" width="54" height="22" rx="3" fill="#f48fb1"/>
+      <path d="M71 50l-7-7a4 4 0 015-6l2 2 2-2a4 4 0 015 6z" fill="#e91e63"/>
+      <rect x="26" y="56" width="90" height="28" rx="3" fill="#e91e63"/><rect x="26" y="62" width="90" height="4" fill="#f8bbd0"/>
+      <rect x="8" y="84" width="126" height="36" rx="4" fill="#f06292"/>
+      <path d="M8 84q9 12 18 0t18 0 18 0 18 0 18 0 18 0 12 0v4H8z" fill="#f8bbd0"/>
+      <circle cx="30" cy="104" r="1.6" fill="#fff59d"/><circle cx="70" cy="108" r="1.6" fill="#fff59d"/><circle cx="110" cy="104" r="1.6" fill="#fff59d"/>
+    </svg>
+    <div class="cut" id="cut"></div>
+  </div>
+  <div class="track" id="track"><div class="fill" id="fill"></div><span>Geser untuk memotong kue!</span><div class="knife" id="knife">🔪</div></div>
+</section>
+
+<!-- 5. Floating Wishes -->
+<section>
+  <h2 class="t">Floating Wishes</h2>
+  <p class="sub">Pecahkan gelembung sabun kaca 3D untuk mengabulkan harapanmu! 🔮</p>
+  <div class="wbox" id="wbox"></div>
+  <div class="wcard hand" id="wcard"></div>
+  <h2 class="hb">Happy Birthday, My Love ♥</h2>
+  <small class="fa">FOREVER &amp; ALWAYS YOURS</small>
+  <button class="btn" data-next>Open Your Gift →</button>
+</section>
+
+<!-- 6. Kado -->
+<section>
+  <h2 class="t">Satu Hal Lagi...</h2>
+  <p class="sub">Ketuk kotak kado premium untuk membuka hadiah spesialmu! 🎁</p>
+  <div class="gift" id="gift"><i class="tag">For You 💛</i><div class="lid"></div><div class="gbox"></div></div>
+</section>
+</main>
+
+<div id="final">
+  <div class="fcard">
+    <div style="font-size:2.2rem">🎂💖</div>
+    <h2 class="t">Selamat Ulang Tahun, <span data-nama></span>!</h2>
+    <p class="hand" id="fmsg"></p>
+    <button class="btn" id="close">Tutup 💌</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
